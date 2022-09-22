@@ -4,6 +4,11 @@ export const request = ky.extend({
   prefixUrl: "",
   timeout: 60 * 1000,
   hooks: {
-    beforeRequest: []
-  }
+    beforeRequest: [(req) => {
+      const token = localStorage.getItem('token')
+      if(token) {
+        req.headers.set('Authorization', token)
+      }
+    }]
+  },
 });

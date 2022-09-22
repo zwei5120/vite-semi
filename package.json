@@ -15,7 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0",
-    "reset-css": "^5.0.1",
+    "vite-plugin-semi-theme": "^0.4.0",
     "zustand": "^4.1.1"
   },
   "devDependencies": {

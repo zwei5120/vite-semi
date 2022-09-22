@@ -1,20 +1,16 @@
 import create from "zustand";
+import type { UserInfo } from "./type";
 
 export const useUserInfo = create<{
-  userInfo: { name: string };
+  userInfo: UserInfo;
   getUserInfo?: () => void;
 }>((set, get) => ({
   userInfo: {
-    name: "qq",
-    age: 12,
+    name: "123",
+    avatar: ''
   },
   getUserInfo: () => {
     console.log("111", get().userInfo.name);
   },
 }));
 
-export const userA = create<{ say: () => void }>((set, get) => ({
-  say: () => {
-    console.log("222", useUserInfo.getState());
-  },
-}));
