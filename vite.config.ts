@@ -4,5 +4,10 @@ import SemiPlugin from "vite-plugin-semi-theme";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    // SemiPlugin({
+    //   // theme: "",
+    // }),
+  ],
 });
