@@ -1,13 +1,13 @@
 import React from "react";
-import { Route, Routes, Outlet } from "react-router-dom";
-import Page1 from "../Page1";
-import Page2 from "../Page2";
+import { Outlet } from "react-router-dom";
+import NewLayout from "../../components/NewLayout";
 
 const Home = () => {
   return (
-    <div>
-      Home page
-      <Outlet />
+    <div className="w-full h-full flex flex-col text-white font-normal">
+      <NewLayout>
+        <Outlet />
+      </NewLayout>
     </div>
   );
 };

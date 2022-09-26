@@ -6,8 +6,20 @@ import SemiPlugin from "vite-plugin-semi-theme";
 export default defineConfig({
   plugins: [
     react(),
-    // SemiPlugin({
-    //   // theme: "",
-    // }),
+    SemiPlugin({
+      theme: "@semi-bot/semi-theme-default",
+      // variables: {
+      //   '--semi-color-primary' : '#ff0000',
+      //   '--semi-blue-5' : '#ff0000'
+      // }
+      // theme: "@semi-bot/semi-theme-test",
+      // include: "~@semi-bot/semi-theme-test/scss/local.scss",
+      options: {
+        // variables: {
+        //   "$--semi-color-primary": "#ff0000",
+        //   "$font-size-small": '#ff0000'
+        // }
+      },
+    }),
   ],
 });

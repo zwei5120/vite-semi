@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@douyinfe/semi-theme-default': ^2.19.0
   '@douyinfe/semi-ui': ^2.19.0
   '@tanstack/react-query': ^4.3.9
   '@types/react': ^18.0.17
@@ -19,6 +20,7 @@ specifiers:
   zustand: ^4.1.1
 
 dependencies:
+  '@douyinfe/semi-theme-default': registry.npmmirror.com/@douyinfe/semi-theme-default/2.19.0
   '@douyinfe/semi-ui': registry.npmmirror.com/@douyinfe/semi-ui/2.19.0_react-dom@18.2.0+react@18.2.0
   '@tanstack/react-query': registry.npmmirror.com/@tanstack/react-query/4.3.9_react-dom@18.2.0+react@18.2.0
   ky: registry.npmmirror.com/ky/0.31.3

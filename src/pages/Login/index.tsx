@@ -23,6 +23,7 @@ const Login = () => {
       })
     })
   }, []);
+
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-[400px] h-[300px]">
